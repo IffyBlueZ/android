@@ -1,0 +1,53 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 上部分：RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_reward"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="94dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/rewardtextView"
+            android:layout_width="238dp"
+            android:layout_height="69dp"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#2196F3"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="52dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/button_delete_score"
+            android:layout_width="124dp"
+            android:layout_height="84dp"
+            android:layout_weight="0.1"
+            android:background="@drawable/btn_border_yuanjiao"
+            android:text="@string/to_zero"
+            android:textSize="35dp" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/button_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+    <!-- 下部分：LinearLayout -->
+
+</LinearLayout>

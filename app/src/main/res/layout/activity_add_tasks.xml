@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 标题 -->
+    <EditText
+        android:id="@+id/add_tasks_details_edit_Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/title"
+        android:layout_marginTop="20dp"
+        android:inputType="text" />
+
+    <!-- 得分 -->
+    <EditText
+        android:id="@+id/add_tasks_details_edit_Score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_tasks_details_edit_Title"
+        android:layout_marginTop="20dp"
+        android:hint="@string/score"
+        android:inputType="number" />
+
+    <!-- 每日/每周/普通 -->
+    <RadioGroup
+        android:id="@+id/add_tasks_details_Group_Frequency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_tasks_details_edit_Score"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/add_tasks_details_Button_Daily"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/daily" />
+
+        <RadioButton
+            android:id="@+id/add_tasks_details_Button_Weekly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/weekly" />
+
+        <RadioButton
+            android:id="@+id/add_tasks_details_Button_Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/regular" />
+    </RadioGroup>
+
+    <!-- 标签 -->
+    <EditText
+        android:id="@+id/add_tasks_details_edit_Tags"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_tasks_details_Group_Frequency"
+        android:layout_marginTop="20dp"
+        android:hint="@string/tags"
+        android:inputType="text" />
+
+    <!-- 确定按钮 -->
+
+    <Button
+        android:id="@+id/add_tasks_details_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="300dp"
+        android:text="@string/ok" />
+
+    <Button
+        android:id="@+id/add_tasks_details_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginBottom="300dp"
+        android:text="@string/cancel" />
+</RelativeLayout>

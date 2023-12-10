@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomTabLayout" parent="Widget.MaterialComponents.TabLayout">
+        <item name="tabIndicatorColor">@color/teal_200</item>
+        <item name="tabIndicatorHeight">4dp</item> <!-- 调整滑动条高度 -->
+        <!-- 可以根据需求调整其他滑动条样式属性 -->
+    </style>
+    <style name="CustomTabText" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">11dp</item> <!-- 调整文字大小 -->
+        <item name="android:textStyle">bold</item><!-- 加粗 -->
+        <!-- 可以根据需要调整其他文字样式属性 -->
+    </style>
+
+</resources>

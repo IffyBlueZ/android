@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">PlayTask</string>
+    <string name="tasks">任务</string>
+    <string name="reward">奖励</string>
+    <string name="home">我</string>
+    <string name="cancel">取消</string>
+    <string name="ok">确定</string>
+    <string name="title">标题</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="score">获得点数</string>
+    <string name="daily">每日任务</string>
+    <string name="weekly">每周任务</string>
+    <string name="regular">普通任务</string>
+    <string name="tags">标签</string>
+    <string name="to_zero">清除</string>
+</resources>

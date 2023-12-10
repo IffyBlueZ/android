@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 标题输入框 -->
+    <EditText
+        android:id="@+id/add_reward_titleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="标题"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="20dp"/>
+
+    <!-- 耗费成就点数输入框 -->
+    <EditText
+        android:id="@+id/reward_score_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="消耗点数"
+        android:inputType="number"
+        android:layout_below="@id/add_reward_titleEditText"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="20dp"/>
+
+    <!-- 标签输入框 -->
+    <EditText
+        android:id="@+id/reward_tagsEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="标签"
+        android:layout_below="@id/reward_score_edit_text"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/add_reward_button_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="300dp"
+        android:text="确定" />
+
+    <Button
+        android:id="@+id/add_reward_button_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginBottom="300dp"
+        android:text="取消" />
+
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 用户名和头像 -->
+    <LinearLayout
+        android:id="@+id/userInfoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        android:clickable="true"
+        android:onClick="onUserInfoClick">
+        <Button
+            android:id="@+id/sign_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登陆"></Button>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="        "></TextView>
+
+        <Button
+            android:id="@+id/sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册"></Button>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="bottom"
+        android:background="#D3D3D3"
+        android:layout_below="@id/userInfoLayout"/>
+
+
+    <!-- GitHub -->
+    <TextView
+        android:id="@+id/helpTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="康康GitHub"
+        android:padding="16dp"
+        android:clickable="true"
+        android:onClick="onHelpClick"
+        android:textStyle="bold"
+        android:layout_below="@id/userInfoLayout"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="bottom"
+        android:background="#D3D3D3"
+        android:layout_below="@id/helpTextView"/>
+    <!-- 检查更新 -->
+    <TextView
+        android:id="@+id/checkUpdateTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="检查更新"
+        android:clickable="true"
+        android:onClick="onUpdateClick"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:layout_below="@id/helpTextView"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="bottom"
+        android:background="#D3D3D3"
+        android:layout_below="@id/checkUpdateTextView"/>
+    <!-- 支持作者 -->
+    <TextView
+        android:id="@+id/buyTeaTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="支持一下作者"
+        android:padding="16dp"
+        android:clickable="true"
+        android:onClick="onBuyTeaClick"
+        android:textStyle="bold"
+        android:layout_below="@id/checkUpdateTextView"/>
+
+
+</RelativeLayout>
